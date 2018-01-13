@@ -3,13 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>doorlock</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <title>doorlock. Store your passwords and authenticators encrypted and access anywhere, anytime </title>
+    <link rel="icon" type="image/svg" href="/static/door-lock.svg">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Lato" rel="stylesheet">
     <style type="text/css">
       :root, body {
         width: 100%;
         margin: 0;
         padding: 0;
+      }
+
+      :root, body {
+        height: 100%;
       }
 
       .splash-screen {
@@ -25,6 +30,13 @@
         z-index: 99;
         top: 0;
         left: 0;
+        opacity: 1;
+        transition: top .8s 1.5s ease-in-out, opacity .4s 1.5s ease-in-out;
+      }
+
+      .splash-screen.animate {
+        top: -100%;
+        opacity: 0;
       }
 
       .splash-screen .logo {

@@ -1,14 +1,15 @@
 import Vue from 'vue'
-import App from './App'
+import Index from './components/Index'
 import router from './router'
+import './styles/Main.sass'
 
 Vue.config.productionTip = false;
 
 new Vue({
   el: '#app',
   router,
-  template: '<App/>',
-  components: { App },
+  template: '<Index/>',
+  components: { Index },
 
   mounted() {
       this.splash();

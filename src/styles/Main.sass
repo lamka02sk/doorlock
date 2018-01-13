@@ -1,0 +1,44 @@
+button.action-button
+  position: fixed
+  display: block
+  width: 56px
+  height: 56px
+  bottom: 48px
+  right: 48px
+  outline: none
+  border: none
+  border-radius: 50%
+  cursor: pointer
+  background: #e0a810 url("../assets/plus.svg") center no-repeat
+  background-size: 20px
+  font-family: 'Lato', sans-serif
+  box-shadow: 0 2px 8px rgba(0,0,0,.15)
+  transition: .2s ease-in-out
+
+  &:after
+    content: attr(data-tooltip)
+    position: absolute
+    top: 50%
+    right: 100%
+    width: auto
+    white-space: nowrap
+    transform: translateY(-50%)
+    padding: 8px 10px 8px 10px
+    box-sizing: border-box
+    background: darkslategray
+    overflow: hidden
+    max-width: 0
+    color: white
+    font-size: .9rem
+    border-radius: 3px
+    opacity: 0
+    transition: .2s 0s ease-in-out
+
+  &:hover
+    box-shadow: 0 3px 8px rgba(0,0,0,.3)
+
+    &:after
+      right: calc(100% + 12px)
+      max-width: 120px
+      opacity: 1
+      transition: .2s .6s ease-in-out

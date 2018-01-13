@@ -1,0 +1,11 @@
+div.wrapper
+  nav
+    router-link(to="passwords").passwords My passwords
+    a |
+    router-link(to="2fa").authentication 2FA
+    a |
+    router-link(to="encryption").encryption Encryption
+    //router-link(to="settings")
+
+  div.content
+    router-view
