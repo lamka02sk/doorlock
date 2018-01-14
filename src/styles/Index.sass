@@ -1,3 +1,5 @@
+$navHeight: 68px
+
 .wrapper
   display: flex
   flex-direction: column
@@ -9,19 +11,48 @@
   margin: 0 auto
   font-family: 'Lato', sans-serif
 
+  .header
+    display: inline-flex
+    position: relative
+    width: auto
+    height: auto
+    margin: 24px 0 0 0
+    font-family: 'Montserrat', sans-serif
+    background: url('../assets/door-lock.svg') left center no-repeat
+    background-size: 1.4rem
+    padding-left: 24px
+
+    a
+      position: relative
+      display: inline-block
+      height: 64px
+      width: 64px
+
+    h1
+      position: relative
+      height: auto
+      display: inline-block
+      text-align: center
+      font-weight: 400
+      margin: 0
+      color: #85959c
+
+      span
+        color: #ffc011
+
   nav
     position: relative
     display: inline-block
     width: auto
-    height: 72px
-    margin: 36px 0 24px 0
+    height: $navHeight
+    margin: 0 0 18px 0
 
     a
       position: relative
       display: inline-block
       width: auto
       height: 100%
-      line-height: 72px
+      line-height: $navHeight
       box-sizing: border-box
       padding: 0 18px
       background: left -24px center no-repeat

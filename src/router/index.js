@@ -4,6 +4,7 @@ import Passwords from '../components/Passwords'
 import Authentication from '../components/Authentication'
 import Encryption from '../components/Encryption'
 import Settings from '../components/Settings'
+import Profile from '../components/Profile'
 
 Vue.use(Router);
 
@@ -32,6 +33,11 @@ export default new Router({
       path: '/settings',
       name: 'Settings',
       component: Settings
+    },
+    {
+      path: '/profile',
+      name: 'Profile',
+      component: Profile
     }
   ]
 })
