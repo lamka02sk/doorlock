@@ -1,9 +1,9 @@
 div.wrapper
   div.header
-    router-link(to=settings, title="Settings").settings
     h1 DOOR
       span LOCK
-    router-link(to=profile, title="Profile").profile
+    router-link(to="settings", title="Settings").settings
+    router-link(to="profile", title="Profile").profile
 
   nav
     router-link(to="passwords").passwords My passwords
