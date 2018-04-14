@@ -5,7 +5,8 @@ export default {
 
   components: {
     'passwords-list': List,
-    'passwords-new': New
+    'passwords-new': New,
+    'search': ''
   }
 
 }

@@ -1,16 +1,19 @@
-div.wrapper
-  div.header
-    h1 DOOR
-      span LOCK
-    router-link(to="settings", title="Settings").settings
-    router-link(to="profile", title="Profile").profile
+div
+  div.wrapper
+    div.header
+      h1 DOOR
+        span LOCK
+      router-link(to="settings", title="Settings").settings
+      router-link(to="profile", title="Profile").profile
 
-  nav
-    router-link(to="passwords").passwords My passwords
-    a |
-    router-link(to="2fa").authentication 2FA
-    a |
-    router-link(to="encryption").encryption Encryption
+    nav
+      router-link(to="passwords").passwords My passwords
+      a |
+      router-link(to="2fa").authentication 2FA
+      a |
+      router-link(to="encryption").encryption Encryption
 
-  div.content
-    router-view
+    div.content
+      router-view
+
+  modals(:modal="modal", @hideModal="hideModal")

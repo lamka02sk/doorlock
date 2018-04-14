@@ -1,0 +1,11 @@
+div.modals(v-if="modal")
+  div.modal-overlay(@click="hideModal")
+  div.modal
+    div.modal-header
+      h2 {{ modal.title }}
+      span.close(v-if="modal.close", @click="hideModal")
+
+    div.modal-content
+      p {{ modal.content }}
+
+    div.modal-actions
