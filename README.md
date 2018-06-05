@@ -1,3 +1,5 @@
+**⚠️ WARNING:** This repository is moved to Gitlab (https://gitlab.com/lamka02sk/doorlock) and no longer updated here.
+
 # doorlock
 
 > A Vue.js project
